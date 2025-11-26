@@ -1,5 +1,5 @@
 // Import Firebase auth dan config
-import { auth } from '../firebase-config.js';
+import { auth } from './firebase-config.js';
 import { signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
 // Cek apakah user sudah login
@@ -93,4 +93,5 @@ loginForm.addEventListener('submit', async (e) => {
         loginBtn.disabled = false;
         loginBtn.textContent = 'Masuk';
     }
+
 });
